@@ -1,0 +1,249 @@
+/**
+ * style.css
+ */
+
+.dtjwpg {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.dtjwpg * {
+	box-sizing: border-box;
+}
+
+.dtjwpg .dtjwpg-wrap {
+	margin: 10px 20px 0 2px;
+	padding: 0;
+}
+
+.dtjwpg .dtjwpg-table {
+	background-color: #ffffff;
+	border: 1px solid #eeeeee;
+	margin: 20px auto;
+	padding: 0;
+	border-radius: 3px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	overflow: hidden;
+}
+
+.dtjwpg .dtjwpg-table {
+	background: none;
+    border: none;
+    margin: 20px auto;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.dtjwpg .dtjwpg-core-table th,
+.dtjwpg .dtjwpg-plugin-table th,
+.dtjwpg .dtjwpg-theme-table th {
+	width: 300px;
+}
+
+.dtjwpg .dtjwpg-table tr td p {
+	margin: 0 0 1em;
+}
+
+.dtjwpg .dtjwpg-title {
+	border: none;
+    border-bottom: 1px solid #eeeeee;
+    width: 100%;
+    margin: 0;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dtjwpg .dtjwpg-content {
+	width: 100%;
+    margin: 0;
+    padding: 0 16px 6px;
+}
+
+.dtjwpg form p {
+	margin: 0 0 10px !important;
+}
+
+.dtjwpg form p.description {
+	margin: 0 !important;
+}
+
+.dtjwpg form .dtjwpg-list {
+	border: 1px solid #eeeeee;
+	height: auto;
+	max-height: 180px;
+	margin: 0 0 10px;
+	padding: 10px;
+	overflow: auto;
+}
+
+.dtjwpg form .dtjwpg-list ul {
+	margin: 0;
+	padding: 0;
+}
+
+.dtjwpg form .dtjwpg-list ul li {
+	margin: 0 0 10px;
+}
+
+.dtjwpg form .dtjwpg-list ul li:only-of-type,
+.dtjwpg form .dtjwpg-list ul li:last-of-type {
+	margin: 0;
+}
+
+.dtjwpg form .tablenav .tablenav-pages-navspan {
+	box-sizing: content-box;
+}
+
+.dtjwpg form .tablenav input,
+.dtjwpg form .tablenav select {
+	width: auto;
+}
+
+
+
+#gatekeeper-logs code {
+	padding: 2px 4px;
+	margin: 1px;
+	background: #1e90ff;
+	color: #ffffff;
+	font-size: 12px;
+	border-radius: 3px;
+	display: inline-block;
+	max-width: 600px;
+	word-wrap: break-word;
+}
+
+
+
+.module-status {
+    padding: 4px 6px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1;
+    color: #ffffff;
+    border-radius: 2px;
+    white-space: nowrap;
+    margin: 1px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: var(--ui-code-font-stack);
+}
+.module-active {
+    background-color: #34495e;
+}
+.module-disabled,
+.module-inactive {
+    background-color: #c0392b;
+}
+
+.module-status--beta {
+    background-color: #f39c12;
+}
+.module-status--new {
+    background-color: #6ab04c;
+}
+.module-status--free {
+    background-color: #1abc9c;
+}
+.module-status--pro {
+    background-color: #ff793f;
+}
+.module-status--plugin {
+    background-color: #1e90ff;
+}
+.module-status--dev {
+    background-color: #badc58;
+    color: #000000;
+}
+
+
+
+/**
+ * Grid
+ */
+.lhf--grid {
+    display: grid;
+    grid-gap: 1em;
+    margin: 1em 0;
+}
+.lhf--grid-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+.lhf--grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.lhf--grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.lhf--grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.lhf--grid-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.lhf--grid-item {
+    background-color: #ffffff;
+    padding: 2em 1em;
+    box-shadow: 0px 25px 15px -25px rgb(151 163 184 / 50%); /* #97a3b8 */
+    border-radius: 4px;
+}
+.lhf--grid-item hr {
+    margin: 1em 0;
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+}
+.lhf--grid-item h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+
+
+.lhf--metric-name {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+}
+.lhf-sf-metric-value {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.lhf--circular-progress {
+    position: relative;
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+}
+.lhf--circular-progress svg {
+    transform: rotate(270deg);
+}
+.lhf--circular-progress circle {
+    stroke-width: 4;
+    fill: none;
+    stroke-linecap: round;
+}
+.lhf--circular-progress circle:nth-of-type(1) {
+    stroke: #dee2e6;
+}
+.lhf--circular-progress circle:nth-of-type(2) {
+    stroke-dasharray: 251.4285714286;
+    stroke-dashoffset: 0; /* 75.4285714286 */
+}
+.lhf--circular-progress .pct {
+    font-size: 15px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
